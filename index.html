@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма для заполнения</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Анкета посетителя ресторана</h1>
+    <form method="post">
+        <fieldset class="review">
+            <legend>Контактная информация</legend>
+            <label>Имя</label>
+            <div class="input">
+                <input id="input" type="text" name="name" placeholder="Введите ваше имя"><br>
+            </div>
+            <label>Телефон</label>
+            <div class="input">
+                <input id="input" type="tel" name="telephone" placeholder="Введите номер телефона"><br>
+            </div>
+            <label>Email</label>
+            <div class="input">
+                <input id="input" type="email" name="email" placeholder="Введите email"><br>
+            </div>
+            <label>Дата посещения</label>
+            <div class="input">
+                <input id="input" type="date" name="date" placeholder="Введите дату посещения"><br>
+            </div>
+        </fieldset>
+        <fieldset class="review">
+            <legend>Персональная информация</legend>
+            <label>Возраст</label>
+            <div class="sebl">
+                <input id="input" type="number" name="age" min="1" max="100" step="1">
+            </div>
+            <label>Любимая кухня</label>
+            <div class="sebl">
+                <select id="small">
+                    <option value="ru">Русская</option>
+                    <option value="jp">Японская</option>
+                    <option value="fr">Французская</option>
+                    <option value="cn">Китайская</option>
+                </select>
+            </div>
+            <label>Какие блюда Вы хотели бы<br>
+                увидеть в меню?</label>
+            <div class="sebl">
+                <textarea id="textarea" name="dishes"></textarea>
+        </fieldset>
+        </div>
+        <fieldset>
+            <label>Почему Вы выбрали наше заведение?</label><br>
+            <legend>Оценка нашего заведения</legend>
+            <label><input class="radio" type="radio" name="q1" value="Close to home/work">  Недалеко от дома/работы</label><br>
+            <label><input class="radio" type="radio" name="q1" value="Saw an advertisement">  Увидел рекламу</label><br>
+            <label><input class="radio" type="radio" name="q1" value="Advised">  Посоветовали</label><br>
+            <label><input class="radio" type="radio" name="q1" value="Optimal value for money">  Оптимальное соотношение цены и
+                качества</label><br>
+            <label>Выбудите рекомендовать наше заведение своим знакомым?</label><br>
+            <label><input class="radio" type="radio" name="q2" value="Yes">  Да</label><br>
+            <label><input class="radio" type="radio" name="q2" value="No">  Нет</label><br>
+        </fieldset>
+        <input class="butsub" type="submit" value="Отправить">
+    </form>
+</body>
+
+</html>
